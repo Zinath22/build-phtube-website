@@ -52,20 +52,24 @@ else{
         `;
         div.innerHTML = `
         <figure ><img class="h-[200px] w-full" src="${items?.thumbnail || 'No item availbale' }" alt="thumbnail" /></figure>
+        
         <div class="card-body">
+        
         <div class="flex gap-4 font-bold  items-center">
          <img class="w-[50px] h-[50px] rounded-full" src="${items?.authors[0].profile_picture}" alt="profile picture">
+      
         <h3>${items?.title}</h3>
     
     </div>
    
-    <div class="flex gap-3 justify-center text-center  items-center">
+   <div class="flex gap-3  text-center  items-center">
     <h3 class="">${items?.authors[0].profile_name}</h3>
     <p> ${items?.authors[0].verified == "" || items?.authors[0].verified === false? '': 
 '<img src="fi_10629607.svg " alt="">'} </p>
 </div>
     <h2>${items?.others?.views}</h2>
           </div>
+          
          
        
         `;
