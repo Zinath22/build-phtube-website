@@ -8,15 +8,15 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class=" container mx-auto">
-    <nav>
-        <div class="navbar bg-base-100">
+    <nav class="mt-10">
+        <div class="navbar  bg-base-100">
             <div class="navbar-start w-full   flex justify-between md:flex-row  flex-col">
              
-                <img src="Logo.png" alt=""></a>
+                <img src="./image/Logo.png" alt=""></a>
             
             
             
-                <button class="btn  rounded text-black">Sort by view</button>
+                <button id="sortBtn" class="btn  rounded text-black">Sort by view</button>
             
             <div>
              
@@ -34,8 +34,13 @@
       <section>
     <div id="tab-container" class="gap-3 my-10 flex justify-center items-center text-center md:flex-row flex-col">
       </div>
+      <!-- blank  -->
+      <div id="blank-container" class="blank-container flex justify-center items-center flex-col">
 
-    <div id="card-container" class="grid gap-5  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-15 ">
+      </div>
+
+    <div id="card-container" class="grid gap-5  grid-cols-1 md:grid-cols-2      lg:grid-cols-4 mt-15 ">
+      
      </div>
      
     
@@ -48,5 +53,6 @@
 </main>
 
     <script src="index.js"></script>
+    <!-- <script src="test7.js"></script> -->
 </body>
 </html>
